@@ -3,10 +3,10 @@ from collections import deque
 import subprocess
 
 # Define the name of the file that contains the list of alertlog directories
-alert_filename = "alert_location.txt"
+alert_filename = "alert_location.conf"
 
 # Define the name of the file that contains the list of errors
-alert_error = "alert_error.txt"
+alert_error = "alert_error.conf"
 
 # Define sender and recipient information
 sender = "it-monitor@itexample.com"
