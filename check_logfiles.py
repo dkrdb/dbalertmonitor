@@ -46,7 +46,7 @@ for alert in alert_filename_list:
                 Line {i+1}: {last_lines[i+1]}
 
                 Best regards,
-                Vale DBA Monitor"""
+                DBA Monitor"""
 
                 # Command that calls mailx with the email information
                 cmd = f'echo "{message}" | mailx -s "{subject}" -a {alert_location_file} -r {sender} {recipient}'
