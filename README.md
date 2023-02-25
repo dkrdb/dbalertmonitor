@@ -1,0 +1,1 @@
+Abre o arquivo de log de alerta do banco e procura por erros que são enviados por email.
