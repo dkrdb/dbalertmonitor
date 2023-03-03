@@ -9,8 +9,8 @@ alert_filename = "alert_location.conf"
 alert_error = "alert_error.conf"
 
 # Define sender and recipient information
-sender = "it-monitor@itexample.com"
-recipient  = "dbagroup@itexample.com"
+sender = "example@example.com"
+recipient  = "example@example.com"
 
 with open(alert_filename, "r") as f:
     # Reads the lines of the file and removes newline characters
@@ -41,15 +41,15 @@ for alert in alert_filename_list:
                 An error was found on server {server}, instance {instance}:
 
                 Log file: {alert_location_file}
-                Line {i-1}: {last_lines[i-2]}
-                Line {i}: {line}
-                Line {i+1}: {last_lines[i+1]}
+                {last_lines[i-2]}
+                {line}
+                {last_lines[i+1]}
 
                 Best regards,
                 DBA Monitor"""
 
                 # Command that calls mailx with the email information
-                cmd = f'echo "{message}" | mailx -s "{subject}" -a {alert_location_file} -r {sender} {recipient}'
+                cmd = f'echo "{message}" | mailx -s "{subject}" -r {sender} {recipient}'
 
                 # Sends the email
                 try:
