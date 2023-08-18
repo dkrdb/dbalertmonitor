@@ -1,2 +1,2 @@
 Error Code,Date/Time,Log File,Server,Instance
-ORA-07445,2023-08-17 22:50:02,/oracle_trace/diag/rdbms/PSMC2C16/PSMC2C163/trace/alert_PSMC2C163.log,smc02adm03vm01,PSMC2C163
+ORA-07445,2023-08-17 22:50:02,/oracle_trace/diag/rdbms/CDBDEV4/CDBDEV41/trace/alert_CDBDEV41.log,dbserver1,CDBDEV41
